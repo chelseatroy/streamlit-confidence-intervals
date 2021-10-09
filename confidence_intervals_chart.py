@@ -4,8 +4,9 @@ import matplotlib.pyplot as plt
 
 from chelseas_data_functions import confidence_interval_for_collection
 
-st.title('Chicago Maintenance Data - Raw')
+st.title('Confidence Intervals Visualized on Chicago Maintenance Data')
 
+"Today we'll be looking at how long it takes the city of Chicago to respond to various maintenance requests. Here's the data we'll explore:"
 @st.cache
 def load_data():
     data = pd.read_csv('metrics.csv')
